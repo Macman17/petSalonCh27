@@ -2,7 +2,7 @@
 const petSalon={
     name:"Pet's with Stylish Cuts",
     address:{
-        street:"Two notch road",
+        street:" 345 Two notch road",
         number:"345",
         zip:"23454",
         city:"Columbia",
@@ -39,23 +39,33 @@ const petSalon={
             service:"Grooming",
             ownerName:"Bre",
             contactPhone:"555-222-5555"
-        }
+        },
+        
+    
     ]
 }
-console.log(petSalon.address.zip);
+console.log(petSalon.address);
 console.log(petSalon.pet.length);
-console.log(petSalon.pet[0].service);// access to property
+console.log(petSalon.pet[0].service);
+// access to property
 
 //Create pet array
 
 //display the pet salon info in the footer section of the html
-function displayPet() {
-    document.getElementById("footer-info").innerHTML=`Welcome to ${petSalon.name} on
-    ${petSalon.address.street}
+function displayPet(){
+    document.getElementById("footer-info").innerHTML=`
+    <ul>${petSalon.name}</ul>
+    <ul>${petSalon.address.street}</ul>
+    <ul>${petSalon.address.city},${petSalon.address.state}${" "} ${petSalon.address.zip}</ul>
     `;
 }
 displayPet();
 
 function displayPetName() {
+    alert(`You have ${petSalon.pet.length} pets registered.`)
+    console.log(petSalon.pet[0].name);
+    console.log(petSalon.pet[1].name);
+    console.log(petSalon.pet[2].name);
     
 }
+displayPetName();

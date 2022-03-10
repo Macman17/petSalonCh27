@@ -1,0 +1,25 @@
+/*global*/
+
+/*body*/
+body{
+    min-height: 100vh;
+}
+/*Nav*/
+
+/*header*/
+
+/*main*/
+
+/*footer*/
+footer{
+    position: sticky;
+    top: 100%; color: white;
+    text-align: center;
+    padding-top: .2rem;
+    background-color: black;
+}
+.footInfo{
+    
+    
+    
+}
