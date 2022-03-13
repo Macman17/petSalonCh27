@@ -1,6 +1,35 @@
 /*global*/
 
 /*body*/
+.nav-bar img{
+    width:  8rem;
+    height: 4rem;
+    margin-left: .10rem;
+
+}  
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(220, 240, 215);
+}
+.links-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-basis: 30rem;
+}
+.links-container a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.0rem;
+    letter-spacing: .1rem;
+}
+.links-container a:last-of-type{
+    margin-right: 0.3rem;
+}
 body{
     min-height: 100vh;
     align-content: center;
@@ -16,9 +45,12 @@ body{
 /*footer*/
 footer{
     position: sticky;
-    top: 100%; color: white;
+    top: 100%; color: rgb(17, 13, 13);
+    font-weight: 600;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
+    margin-top: 30rem;
     padding-top: .2rem;
-    background-color: black;
+    background-color: rgb(220, 240, 215);
 }
 

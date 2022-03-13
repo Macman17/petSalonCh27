@@ -9,13 +9,27 @@
     <title>Pet's with Stylish Cuts</title>
 </head>
 <body>
+    <nav class="nav-bar">
+        <div class="logo-container">
+            <img class="logo" src="logo.jpg" alt="">
+        </div>
+        <div class="links-container">
+            <a href="index.html">Home</a>
+            <a href="index.html">About</a>
+            <div class="register-link">
+                <a href="register.html">Register Here</a>
+            </div>
+        </div>
+ 
+    </nav>
     <header>
         <h1>Pet's with Stylish Cuts</h1>
     </header>
     <main>
-        <h2>Register a new pet</h2>
+        
         <div> 
-                <div>
+                <div class="mb-3-container">
+                    <h2 class="mb-3-header">Register a new pet</h2>
                     <div class="mb-3">
                         <input type="text" id="txtPetName" placeholder="Enter pet's name">
                     </div>
@@ -38,11 +52,11 @@
                         <input type="" id="txtService" placeholder="What service would you like">
                     </div>
 
-
+                    <button class="btn btn-primary" id="btn-add" onclick="register();">Add Pet</button>
                     <!--Add the pet information: breed,serive,owners name,phone number-->
                 </div>  
             
-            <button class="btn btn-primary" onclick="register();">Add Pet</button>
+            
 
     </div> 
     </main>
@@ -52,8 +66,8 @@
 
 
     </div>
-    <footer>
-
+    <footer id="footer-info">
+        <li class="footInfo"> </li>
     </footer>
     <script src='script/displayInfo.js'></script>
     <script src='script/register.js'></script>

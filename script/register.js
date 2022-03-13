@@ -70,7 +70,9 @@ function displayPetsName() {
         <p>Owner Phone Number: ${petSalon.pet[i].petOwnerPhone}</p>
         <p>Service: ${petSalon.pet[i].petService}</p>
         </div>
+        
         `;
+        
         console.log(tmp);
     }
     document.getElementById("pets").innerHTML=tmp;
@@ -86,3 +88,4 @@ let tiger= new Pet("Tiger", 3, "Male","Great Dame","Glen","555-555-5555","Cut");
     displayPetsName();
 }
 window.onload=init;
+
