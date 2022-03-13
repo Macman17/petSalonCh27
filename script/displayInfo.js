@@ -12,41 +12,12 @@ const petSalon={
         open:"9:00am",
         close:"5:00pm"
     },
-    pet:[
-        {//First pet
-            name:"Scooby",
-            age:50,
-            gender:"male",
-            breed:"Dane",
-            service:"Grooming",
-            ownerName:"Shaggy",
-            contactPhone:"555-555-5555"
-        },
-        {//First pet
-            name:"Haze",
-            age:1,
-            gender:"male",
-            breed:"Lab",
-            service:"Grooming",
-            ownerName:"CeeCee",
-            contactPhone:"555-555-0000"
-        },
-        {//First pet
-            name:"Dexter",
-            age:2,
-            gender:"male",
-            breed:"Husky",
-            service:"Grooming",
-            ownerName:"Bre",
-            contactPhone:"555-222-5555"
-        },
-        
+    pet:[]
     
-    ]
 }
 console.log(petSalon.address);
 console.log(petSalon.pet.length);
-console.log(petSalon.pet[0].service);
+
 // access to property
 
 //Create pet array
@@ -68,4 +39,4 @@ function displayPetName() {
     console.log(petSalon.pet[2].name);
     
 }
-displayPetName();
+//displayPetName();

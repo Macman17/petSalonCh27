@@ -3,12 +3,15 @@
 /*body*/
 body{
     min-height: 100vh;
+    align-content: center;
 }
+
 /*Nav*/
 
 /*header*/
 
 /*main*/
+
 
 /*footer*/
 footer{
@@ -18,8 +21,4 @@ footer{
     padding-top: .2rem;
     background-color: black;
 }
-.footInfo{
-    
-    
-    
-}
+
