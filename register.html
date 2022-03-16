@@ -29,7 +29,10 @@
         
         <div> 
                 <div class="mb-3-container">
-                    <h2 class="mb-3-header">Register a new pet</h2>
+                    <h2 class="mb-3-header">Register a new pet 🐶🐱</h2>
+                    <div class="mb-3">
+                        <span id="txtPetType">Pet Type</span>
+                    </div>
                     <div class="mb-3">
                         <input type="text" id="txtPetName" placeholder="Enter pet's name">
                     </div>
@@ -46,10 +49,10 @@
                         <input type="text" id="txtOwnerName" placeholder="Enter owner name">
                     </div>
                     <div class="mb-3">
-                        <input type="" id="txtOwnerPhone" placeholder="Enter owner phone number">
+                        <Span type="" id="txtOwnerPhone" placeholder="Enter owner phone number">
                     </div>
                     <div class="mb-3">
-                        <input type="" id="txtService" placeholder="What service would you like">
+                        <span  id="txtService">Select a Service</span>
                     </div>
 
                     <button class="btn btn-primary" id="btn-add" onclick="register();">Add Pet</button>
@@ -60,12 +63,33 @@
 
     </div> 
     </main>
-    <div class="pets container" id="pets">🐶🐱🐹
+    <div class="pets container" id="pets">
 
  
 
 
     </div>
+    <div class="sreach-container">
+        <input class="form-control" id="txtSearch" type="
+        search">
+        <button onclick="searchPet();" class="btn-primary">Search</button>
+    </div>
+    <table class="table" >
+        <tr>
+            <th>Pet Type</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Gender</th>
+            <th>Breed</th>
+            <th>Owner</th>
+            <th>Owener phone</th>
+            <th>Service</th>
+        </tr>
+        <tbody id="petTable">
+                
+        
+        </tbody>
+    </table>
     <footer id="footer-info">
         <li class="footInfo"> </li>
     </footer>

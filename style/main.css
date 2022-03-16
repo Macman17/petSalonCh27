@@ -1,6 +1,9 @@
 /*global*/
 
 /*body*/
+body{
+    background-color: bisque;
+}
 .nav-bar img{
     width:  8rem;
     height: 4rem;
@@ -34,7 +37,9 @@ body{
     min-height: 100vh;
     align-content: center;
 }
-
+.bg-color{
+    background-color: aqua;
+}
 /*Nav*/
 
 /*header*/
