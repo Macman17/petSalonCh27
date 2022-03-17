@@ -2,12 +2,20 @@
 
 /*body*/
 body{
-    background-color: bisque;
+    background-color: beige;
+}
+header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: .3rem;
+    font-style: oblique;
+    text-shadow: 1px 1px 1px green; 
 }
 .nav-bar img{
     width:  8rem;
     height: 4rem;
     margin-left: .10rem;
+    
 
 }  
 .nav-bar{
@@ -15,20 +23,26 @@ body{
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(220, 240, 215);
+    box-shadow: 1px 1px 1px green; 
+    
+
 }
 .links-container{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-basis: 30rem;
+    
+    
 }
 .links-container a{
     text-decoration: none;
     color: black;
     text-transform: uppercase;
-    font-weight: 700;
+    font-weight: 900;
     font-size: 1.0rem;
     letter-spacing: .1rem;
+    
 }
 .links-container a:last-of-type{
     margin-right: 0.3rem;
@@ -45,8 +59,17 @@ body{
 /*header*/
 
 /*main*/
-
-
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15rem;
+    font-size:xx-large;
+    font-weight: bold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: .2rem;
+    
+}
 /*footer*/
 footer{
     position: sticky;
@@ -57,5 +80,6 @@ footer{
     margin-top: 30rem;
     padding-top: .2rem;
     background-color: rgb(220, 240, 215);
+    box-shadow: 1px 1px 1px green; 
 }
 

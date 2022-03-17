@@ -1,5 +1,6 @@
 //create the constructor
 let x=0;
+let data=1;
 function Pet(type,name, age, gender,breed,owner,ownerPhone, service) {
     this.petType=type;
     this.petName=name;
@@ -47,10 +48,11 @@ function isValid(aPet) {
 }
 
 function register(){
-        console.log(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetOwner.value,inputPetOwnerPhone.value,inputPetService.value);
+        console.log(inputPetType.value,inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetOwner.value,inputPetOwnerPhone.value,inputPetService.value);
         // create the obj
-        let thePet = new Pet(inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetOwner.value,inputPetOwnerPhone.value,inputPetService.value);
+        let thePet = new Pet(inputPetType.value,inputPetName.value,inputPetAge.value,inputPetGender.value,inputPetBreed.value,inputPetOwner.value,inputPetOwnerPhone.value,inputPetService.value);
         console.log(thePet);
+        
         //push the obj
         if(isValid){
             petSalon.pet.push(thePet);
@@ -59,6 +61,7 @@ function register(){
             displayPetTable();
         } 
 }
+
 function displayPetsName() {
     //travel the array
     let tmp="";
@@ -66,7 +69,7 @@ function displayPetsName() {
         //create the template
         tmp+=`
         <div class="pet">
-        
+        <p>Pet Type: ${petSalon.pet[i].petType}</p>
         <p>Name: ${petSalon.pet[i].petName}</p>
         <p>Age: ${petSalon.pet[i].petAge}</p>
         <p>Gender: ${petSalon.pet[i].petGender}</p>
@@ -88,8 +91,8 @@ function displayPetTable() {
     for (let x = 0; x < petSalon.pet.length; x++) {
         //create the template
         trow+=`
-        <tr id="${petSalon.pet[x].id}">
-            <td>Name: ${petSalon.pet[x].petType}</d>
+        <tr class= "tableRow" id="${petSalon.pet[x].id}">
+            <td>Pet Type: ${petSalon.pet[x].petType}</td>
             <td>Name: ${petSalon.pet[x].petName}</td>
             <td>Age: ${petSalon.pet[x].petAge}</td>
             <td>Gender: ${petSalon.pet[x].petGender}</td>
@@ -106,6 +109,8 @@ function displayPetTable() {
     } 
     document.getElementById("petTable").innerHTML=trow;
 }
+
+
 
 function deletePet(petId) {
     console.log("Pet deleted:", petId);
@@ -125,6 +130,7 @@ function deletePet(petId) {
 
     
 }
+
 function searchPet() {
     let searchString=document.getElementById("txtSearch").value;
     console.log(searchString);
@@ -150,6 +156,7 @@ let tiger= new Pet("Dog","Tiger", 3, "Male","Great Dame","Glen","555-555-5555","
     petSalon.pet.push(haze,dexter,tiger)
     displayPetsName();
     displayPetTable();
+    counter();
 }
 window.onload=init;
 

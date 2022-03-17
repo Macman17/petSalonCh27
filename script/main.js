@@ -49,3 +49,15 @@ function displayStu(user){
     return `Name: ${user.userFn} \n Email: ${user.userEmail}`;
 }
 console.log(displayStu(student1));
+function petCounter(doSomthing,e) {
+    let theSelect= document.querySelector("select");
+    theSelect.addEventListener("click", doSomthing, false);
+    if (e.target !== e.currentTarget) {
+        let clickedItem = e.target.id;
+        console.log("+1 Item", clickedItem);
+    }
+    e.stopPropagation();
+
+
+
+}

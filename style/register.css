@@ -9,6 +9,8 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: rgb(220, 240, 215);
+    box-shadow: 1px 1px 1px green; 
+    
 }
 .links-container{
     display: flex;
@@ -30,6 +32,11 @@
 body{
     min-height: 100vh;
     align-content: center;
+    background-color: beige;
+}
+header{
+    text-align: center;
+    text-shadow: 1px 1px 1px green; 
 }
 
 
@@ -37,16 +44,19 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 1rem; 
-    margin-right: 1rem;   
+    margin-left: 3rem; 
+    margin-right: 3rem;   
 }
 .mb-3-container{
     border: .2rem solid black;
+    border-radius: .4rem;
+    box-shadow: 2px 2px 2px green; 
     margin-left: 20rem;
     margin-right: 20rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     
     
     
@@ -57,12 +67,66 @@ body{
     font-weight: 700;
     
 }
+.selectDrop{
+    margin: 0;
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    box-sizing: border-box;
+    position: absolute;
+    transform: scale(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+.newselectDrop{
+    transform: scale(1);
+}
+.select{
+    background-color: rgb(220, 240, 215) ;
+    box-shadow: 1px 1px 1px green; 
+    
+}
+.select:hover{
+    background-color: dodgerblue;
+}
+.select,.links{
+    font-size: large;
+    font-weight: 700;
+    font-family: futura Md BT;
+    border: none;
+    outline: none;
+    width: 35rem;
+    ;
+    
+    
+}
+.link-header{
+    text-align: center;
+    
+}
+.links{
+    background-color: rgb(248, 248, 218);
+    text-align: center;
+    
+    
+}
+.links:hover{
+    background-color: dodgerblue;
+    transform: scale(1.1);
+}
 #btn-add{
-    margin-left: 6rem;
-    margin-right: 6rem;
+    margin-left: 12rem;
+    margin-right: 8rem;
     align-content: center;
     border: rgb(220, 240, 215);
     padding-bottom: .1rem;
+    margin-bottom: .2rem;
+}
+.counter{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
 
 
@@ -83,6 +147,26 @@ body{
     padding-left: 1rem;
 
 }
+.pet:hover{
+    background-color: dodgerblue;
+}
+.search-container{
+    margin-left: 15rem;
+    margin-right: 15rem;
+}
+.btn-primary{
+    margin-left: 17rem;
+    width: 15rem;
+    margin-top: .2rem;
+    border-radius: .4rem;
+}
+.table{
+    background-color: rgb(220, 240, 215);
+    box-shadow: 1px 1px 1px green; 
+}
+.tableRow:hover{
+    background-color: dodgerblue;
+}
 .bg-color{
     background-color: aqua;
 }
@@ -96,4 +180,5 @@ footer{
     margin-top: 30rem;
     padding-top: .2rem;
     background-color: rgb(220, 240, 215);
+    box-shadow: 1px 1px 1px  green; 
 }
