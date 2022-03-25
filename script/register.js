@@ -1,6 +1,6 @@
 //create the constructor
 let x=0;
-let data=1;
+
 function Pet(type,name, age, gender,breed,owner,ownerPhone, service) {
     this.petType=type;
     this.petName=name;
@@ -12,6 +12,14 @@ function Pet(type,name, age, gender,breed,owner,ownerPhone, service) {
     this.petService=service;
     this.id=x++;
 }
+class count{
+    constructor(dog,cat,other){
+        this.typeDog=dog;
+        this.typeCat=cat;
+        this.typeOther=other;
+    }
+}
+
 //get the info from the input
 let inputPetType= document.getElementById("txtPetType");
 let inputPetName= document.getElementById("txtPetName");
@@ -108,8 +116,41 @@ function displayPetTable() {
         console.log(trow);
     } 
     document.getElementById("petTable").innerHTML=trow;
+    petCounter();
 }
 
+
+function petCounter() {
+    let dog = 0;
+    let cat= 0;
+    let other=0;
+   
+    if(inputPetType.value== "dogs",){
+        dog++;
+        console.log("Added", dog++);
+            document.getElementById("animals").innerHTML=`
+            <p class="counter">You have ${dog} dogs!</p>
+            `;
+            
+    }else if(inputPetType.value== "cats"){
+        cat++;
+        console.log("Added", cat++);
+            document.getElementById("animals2").innerHTML=`
+            <p class="counter">You have ${cat} dogs!</p>
+            `;
+            
+    }
+    if(inputPetType.value== "other"){
+        other++;
+        console.log("Added", other++);
+            document.getElementById("animals3").innerHTML=`
+            <p class="counter">You have ${other} dogs!</p>
+            `;
+            
+    }
+    
+        
+} 
 
 
 function deletePet(petId) {
@@ -149,14 +190,14 @@ function searchPet() {
 //display the tmp on the html
  
 function init() {
-let haze = new Pet("Dog","Haze", 45, "Male", "Pitbull", "Amy", "888-888-8888", "Wash");
-let dexter = new Pet("Dog","Dexter", 34, "Male", "Lab","Glen","555-555-5555", "Wash and cut" );
-let tiger= new Pet("Dog","Tiger", 3, "Male","Great Dame","Glen","555-555-5555","Cut");
+let haze = new Pet("Dogs","Haze", 45, "Male", "Pitbull", "Amy", "888-888-8888", "Wash");
+let dexter = new Pet("Dogs","Dexter", 34, "Male", "Lab","Glen","555-555-5555", "Wash and cut" );
+let tiger= new Pet("Dogs","Tiger", 3, "Male","Great Dame","Glen","555-555-5555","Cut");
 
     petSalon.pet.push(haze,dexter,tiger)
     displayPetsName();
     displayPetTable();
-    counter();
+    
 }
 window.onload=init;
 

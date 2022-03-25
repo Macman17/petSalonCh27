@@ -33,10 +33,10 @@
                     <h2 class="mb-3-header">Register a new pet 🐶🐱🐹</h2>
                     <div class="mb-3">
                             <select id="txtPetType" class="select">
-                                <option onclick="petCounter();"class="link-header">Select Pet Type</option>
-                                <option onclick="petCounter();" class="links">Dog 🐶</option>
-                                <option onclick="petCounter();"class="links">Cat 🐱</option>
-                                <option onclick="petCounter();" class="links">Other🐹</option>
+                                <option class="link-header">Select Pet Type</option>
+                                <option value="dogs" class="links">Dog 🐶</option>
+                                <option value="cats" class="links">Cat 🐱</option>
+                                <option value="other"class="links">Other🐹</option>
                                 
                             </select>
                     </div>
@@ -73,7 +73,7 @@
                         </select>
                     </div>
 
-                    <button class="btn btn-primary" id="btn-add" onclick="register();">Add Pet</button>
+                    <button class="btn btn-primary" id="btn-add" onclick="petCounter();" onclick="register();">Add Pet</button>
                     <!--Add the pet information: breed,serive,owners name,phone number-->
                 </div>  
             
@@ -82,16 +82,15 @@
     </div> 
     
     </main>
-    <div class="counter" id="animals">
-            
-        <div id="dogs">
-            🐶 3
+    <div class="count-container">
+        <div id="animals">
+                
         </div>
-        <div id="cats">
-            🐱 0
+        <div id="animals2">
+
         </div>
-        <div id="other">
-            🐹 0
+        <div id="animals3">
+
         </div>
     </div>
     <div class="pets container" id="pets">

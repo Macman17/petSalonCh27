@@ -67,7 +67,7 @@ header{
     font-weight: 700;
     
 }
-.selectDrop{
+/*.selectDrop{
     margin: 0;
     display: flex;
     flex-direction:column ;
@@ -77,11 +77,16 @@ header{
     transform: scale(0);
     transform-origin: top;
     transition: 0.3s;
-}
+}*/
 .newselectDrop{
     transform: scale(1);
 }
 .select{
+    display: flex;
+    flex-direction:column ;
+    justify-content:center ;
+    /*box-sizing: border-box;
+    position: absolute;*/
     background-color: rgb(220, 240, 215) ;
     box-shadow: 1px 1px 1px green; 
     
@@ -95,8 +100,8 @@ header{
     font-family: futura Md BT;
     border: none;
     outline: none;
-    width: 35rem;
-    ;
+
+    
     
     
 }
@@ -122,10 +127,23 @@ header{
     padding-bottom: .1rem;
     margin-bottom: .2rem;
 }
+.count-container{
+    display: flexbox;
+    flex-direction: column;
+    justify-content: space-around;
+    border: .2rem solid black;
+    padding-bottom: 4rem;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
 .counter{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    border: .2rem solid black;
+    padding-bottom: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 
 }
 
